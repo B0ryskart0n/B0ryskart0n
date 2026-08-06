@@ -21,7 +21,9 @@
 \setlength{\rightwidth}{\size}
 \addtolength{\rightwidth}{-\leftwidth}
 
-\newenvironment{items}[1]{\sf\section*{#1}\begin{itemize}\setlength{\itemsep}{0mm}}{\end{itemize}}
+\newenvironment{items}[1]
+{\sf\large\section*{\textsf{#1}}\begin{itemize}\setlength{\itemsep}{0mm}}
+{\end{itemize}}
 
 \begin{document}
 \centering
