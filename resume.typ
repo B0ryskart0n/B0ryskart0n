@@ -154,7 +154,7 @@ I enjoy helping people and sharing knowledge.
 #edu(
   institution: "Wrocław University of Science and Technology",
   location: "Wrocław, Poland",
-  dates: date_range(start-date: "X 2019", end-date: "II 2023"),
+  dates: date_range(start-date: "2019-10", end-date: "2023-02"),
   degree: "Bachelor of Science in Applied Mathematics",
 )
 - GPA (fail: 2.0, max: 5.5): 5.26
@@ -172,7 +172,7 @@ I enjoy helping people and sharing knowledge.
   title: "Model Validation Specialist",
   location: "Wrocław, Poland",
   company: "Commerzbank",
-  dates: date_range(start-date: "VIII 2024", end-date: "present"),
+  dates: date_range(start-date: "2024-08", end-date: "present"),
 )
 
 - Validating Counterparty Credit Risk models.
@@ -185,7 +185,7 @@ I enjoy helping people and sharing knowledge.
   title: "Quantitative Developer",
   location: "Wrocław, Poland",
   company: "Credit Suisse",
-  dates: date_range(start-date: "VI 2022", end-date: "VII 2024"),
+  dates: date_range(start-date: "2022-06", end-date: "2024-07"),
 )
 
 - Responsible for developing (*F\#* & *C\#*) and supporting front-office applications and services.
