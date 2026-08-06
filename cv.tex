@@ -22,7 +22,7 @@
 \addtolength{\rightwidth}{-\leftwidth}
 
 \newenvironment{items}[1]
-{\sf\large\section*{\textsf{#1}}\begin{itemize}\setlength{\itemsep}{0mm}}
+{\textbf{#1} \begin{itemize} \setlength{\itemsep}{0mm} \sf}
 {\end{itemize}}
 
 \begin{document}
@@ -30,18 +30,16 @@
 
 % \section*{\Huge \textbf{\textsf{Borys Kopeć}}}
 \textsf{\textbf{\Huge Borys Kopeć}}
-\vspace{10mm}
+\vspace{7mm}
 
 \begin{minipage}[t][][t]{\leftwidth}
-  \section*{\textsf{Contact}}
-  \textsf{\large
-    \begin{description}
-      \item \texttt{+}48 123 456 789
-      \item boryskopec00@gmail.com
-      \item \faLinkedin \href{https://linkedin.com/in/boryskopec}{in/boryskopec}
-      \item \faGithubSquare \href{https://github.com/B0ryskart0n}{B0ryskart0n}
-    \end{description}
-  }
+  % \textbf{Contact}
+  \begin{description} \setlength{\itemsep}{0mm} \sf
+    \item \texttt{+}48 123 456 789
+    \item boryskopec00@gmail.com
+    \item \faLinkedin \href{https://linkedin.com/in/boryskopec}{in/boryskopec}
+    \item \faGithubSquare \href{https://github.com/B0ryskart0n}{B0ryskart0n}
+  \end{description}
   \begin{items}{Industry knowledge}
     \item Agile manifesto
     \item Object-oriented\newline programming
@@ -61,7 +59,7 @@
   \end{items}
 \end{minipage}
 \begin{minipage}[t][][t]{\rightwidth}
-  \section*{\textsf{About me}}
+  \section*{About me}
   I have the ability to ask accurate (and often challenging) questions.
   I always try to get to the bottom of things.
 
@@ -79,7 +77,7 @@
 
   I have an excellent memory and am able to recall information off the top of my head.
 
-  \section*{\textsf{Professional experience}}
+  \section*{Professional experience}
   \textcolor{gray}{\footnotesize VI 2022 -- present}
 
   \textbf{Credit Suisse --- Quantitative Developer}
@@ -88,7 +86,7 @@
   Working in a small team responsible for developing, testing, releasing and supporting front-office applications and services.
   % This definitely needs to be extended
 
-  \section*{\textsf{Education}}
+  \section*{Education}
   \textcolor{gray}{\footnotesize X 2019 -- II 2023}
 
   \textbf{
