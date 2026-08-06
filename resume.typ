@@ -1,7 +1,44 @@
+//////////////////////////////////////////////////////////////////////////////// Variables
+#let author = "Borys Kopeć"
+#let email = "boryskopec00@gmail.com"
+#let github = "github.com/B0ryskart0n"
+#let linkedin = "linkedin.com/in/boryskopec"
+#let personal-site = ""
+#let phone = "+48 987 654 321"
+
+//////////////////////////////////////////////////////////////////////////////// Configuration
 #let dark_color = rgb("#625892")
 #let light_color = rgb("#e9e4f8")
+#let font_size = 11pt
+#let big_font_size = 2 * font_size
 
-// Helpers
+#set document(author: author, title: author + " resume")
+#set page(margin: 10mm, paper: "a4")
+#set text(
+  font: "libertinus serif",
+  size: font_size,
+  lang: "en",
+  // Disable ligatures so ATS systems do not get confused when parsing fonts.
+  ligatures: false,
+)
+#set par(justify: true)
+
+#show link: underline
+#show heading: set text(
+  fill: rgb(dark_color),
+)
+// Name will be aligned left, bold and big
+#show heading.where(level: 1): heading => [
+  #set align(center)
+  #set text(size: big_font_size)
+  #pad(heading.body)
+]
+#show heading.where(level: 2): heading => [
+  #pad(top: 0pt, bottom: -10pt)[#smallcaps(heading.body)]
+  #line(length: 100%, stroke: 1pt)
+]
+
+//////////////////////////////////////////////////////////////////////////////// Helper functions
 #let contact-item(value, prefix: "", link-type: "") = {
   if value != "" {
     if link-type != "" {
@@ -86,43 +123,7 @@
   )
 }
 
-#let author = "Borys Kopeć"
-#let email = "boryskopec00@gmail.com"
-#let github = "github.com/B0ryskart0n"
-#let linkedin = "linkedin.com/in/boryskopec"
-#let personal-site = ""
-#let phone = "+48 987 654 321"
-
-#let font_size = 11pt
-#let big_font_size = 2 * font_size
-
-#set document(author: author, title: author + " resume")
-#set page(margin: 10mm, paper: "a4")
-#set text(
-  font: "libertinus serif",
-  size: font_size,
-  lang: "en",
-  // Disable ligatures so ATS systems do not get confused when parsing fonts.
-  ligatures: false,
-)
-#set par(justify: true)
-
-#show link: underline
-#show heading: set text(
-  fill: rgb(dark_color),
-)
-// Name will be aligned left, bold and big
-#show heading.where(level: 1): heading => [
-  #set align(center)
-  #set text(size: big_font_size)
-  #pad(heading.body)
-]
-#show heading.where(level: 2): heading => [
-  #pad(top: 0pt, bottom: -10pt)[#smallcaps(heading.body)]
-  #line(length: 100%, stroke: 1pt)
-]
-
-// Name
+//////////////////////////////////////////////////////////////////////////////// Contents
 #heading(level: 1, author)
 
 // Personal Info
