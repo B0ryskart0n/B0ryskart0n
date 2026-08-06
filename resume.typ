@@ -67,7 +67,7 @@
   left: "",
   right: "",
 ) = {
-  rect(fill: light_color)[
+  rect(inset: (x: 5pt, y: 0pt), outset: (x: 0pt, y: 5pt), fill: light_color)[
     #left #h(1fr) #right
   ]
 }
