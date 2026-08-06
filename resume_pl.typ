@@ -150,7 +150,7 @@
 
 #align(center)[
   Uwielbiam budować rozwiązania, w których kluczowe są poprawność i wydajność.
-  Jestem skrupulatny z natury: zadaję wiele pytań w celu zrozumienia problemu od podstaw i poważnie traktuję odpowiedzalność.
+  Jestem skrupulatny z natury --- lubię zrozumieć problem od podstaw i poważnie traktuję odpowiedzalność.
   Mam wielką przyjemność z pomagania innym i dzielenia się wiedzą.
 ]
 
@@ -169,7 +169,7 @@
 - Kluczowe przedmioty: Algorytmy i Struktury Danych, Metody Numeryczne, Symulacje Komputerowe, Statystyka i Analiza Danych.
 - Pisałem aplikacje, analizy i symulacje w *Python*, *R*, *Julia*. Projektowałem i odpytywałem bazy danych *SQL* (MariaDB).
 // - Primarily interested in Mathematical Modelling, Probability Theory, and programming
-- Zakończyłem studia pracą dyplomową "Wycena opcji przy pomocy modelu Hestona".
+- Zakończyłem studia pracą dyplomową "Wycena opcji przy pomocy modelu Hestona" i oceną _bardzo dobry_.
 
 == Doświadczenie zawodowe
 
@@ -180,11 +180,11 @@
   dates: date_range(start-date: "2024-08", end-date: "obecnie"),
 )
 
-- Validating Counterparty Credit Risk models.
-  Performing analyses using *R*, *Python*, *MS Excel*, and *SQL*; writing reports in *LaTeX*.
-- Working with model developers on one side, and regulators on the other side; with many successes at coordinating findings with model owners.
-  This requires a good balance of regulation-strictness and pragmatism.
-- Constantly streamlining validation work, including responsible use of Artificial Intelligence for coding and document analysis.
+- Waliduję modele ryzyka kredytowego kontrahenta.
+  Wykonuję analizy w *R*, *Python*, *MS Excel*, *SQL*; piszę raporty w *LaTeX*.
+- Współpracuję z twórcami modeli z jednej strony i regulatorami z drugiej strony. Do tej pory odniosłem sporo sukcesów w koordynacji wyników z właścicielami modeli.
+  Wymaga to dobrego balansu między przestrzeganiem regulacji, a pragmatyzmem.
+- Ciągle usprawniam procesy walidacji, również odpowiedzialnie wykorzystując Sztuczną Inteligencję do kodowania i analizy.
 
 #work(
   title: "Quantitative Developer",
@@ -193,14 +193,12 @@
   dates: date_range(start-date: "2022-06", end-date: "2024-07"),
 )
 
-// - Worked in a multicultural cross-timezone team.
-- Responsible for developing (*F\#* & *C\#*) and supporting front-office applications and services.
-  The main product being a desktop application _Aura_ for portfolio pricing and scenario risk analysis used by 100+ traders worldwide.
-- Led the design and development of a new solution that extracted a high-demand feature from _Aura_ as a reusable plugin-library and a REST web service (*ASP.NET*), reducing coupling and enabling independent deployment.
-  Organised design meetings and guided discussions with internal clients.
-- Handled around 15 support cases quarterly (median: \~4), earned the title of "Master of Support" and a reputation as the team's go-to for diagnosing the hardest production issues.
-  Oftentimes assisting traders live.
-- During the UBS merger, rapidly extended support for several new trade types within weeks.
+- Rozwijałem (*F\#* & *C\#*) i wspierałem aplikacje i usługi front-office.
+  Głównym produktem była aplikacja desktopowa _Aura_ używana do wyceny portfeli i analizy ryzyka używana przez ponad 100 traderów na całym świecie.
+- Przewodziłem projektowaniem i rozwojem nowego rozwiązania, które wyodrębniło kluczową funkcję z _Aura_ jako bibliotekę wtyczek i interfejs API REST (*ASP.NET*), umożliwiając niezależne wdrażanie.
+  Organizowałem spotkania projektowe i prowadziłem dyskusje z klientami wewnętrznymi.
+- Obsługiwałem około 15 przypadków wsparcia kwartalnie (mediana: \~4), czym zasłużyłem sobie na tytułu "Mistrza Supportu" i~reputacji jako osoby, do której zespół zwraca się w przypadku najtrudniejszych problemów produkcyjnych.
+- Podczas fuzji z UBS, dynamicznie rozszerzyliśmy funkcjonalność _Aura_ o kilka nowych typów transakcji w ciągu tygodni.
 
 == Projekty
 
@@ -209,19 +207,18 @@
   url: "github.com/B0ryskart0n/gra",
 )
 
-I like playing roguelike games, so I decided to write my own!
-It's a single-player sci-fi roguelite written in *Rust*.
-Built with Bevy ECS architecture with concurrent schedules for game physics, and UI to keep systems decoupled and performant.
-// Still in early stages of development, but I have a concrete vision with an interesting plot and I'm pushing towards that.
+Lubię gry roguelike, więc postanowiłem napisać moją własną!
+Jest to jednoosobowa gra osadzona w świecie science fiction, pisana w *Rust*.
+Tworzona w silniku Bevy z wykorzystaniem architektury ECS.
 
 #project(
   name: "balgo",
   url: "github.com/B0ryskart0n/balgo",
 )
 
-A *Rust* library of algorithms and data structures, implemented from scratch with a focus on correctness and performance.
-Currently features A\* pathfinding, verified against benchmarks.
-An exercise in writing clean code and identifying performance bottlenecks.
+Implementowana przeze mnie od zera biblioteka w *Rust* z algorytmami i strukturami danych.
+Obecnie zawiera algorytm A\*.
+Traktuję ten projekt jako ćwiczenie w pisaniu czystego kodu i w optymalizacji oprogramowania.
 
 #project(
   name: "dashperfin",
