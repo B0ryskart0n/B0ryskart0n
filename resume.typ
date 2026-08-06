@@ -157,14 +157,14 @@
   dates: date_range(start-date: "2019-10", end-date: "2023-02"),
   degree: "Bachelor of Science in Applied Mathematics",
 )
-- GPA (fail: 2.0, max: 5.5): 5.26
+- GPA (fail: 2.0, max: 5.5): 5.26.
 // - Repeated Principal's Scholarship recipient
 // - Year representative
-- Proudly selected for QuantStrats Scholarship Programme organised by Credit Suisse at which I got offered a permanent position as Quantitative Developer
-// - Relevant coursework: Statistics & Data Analysis, Numerical Methods & Computer Simulations, Algorithms & Data structures
-- Writing apps, analyses, and simulations in *Python*, *R*, *Julia*
-- Primarily interested in Mathematical Modelling, Probability Theory, and programming
-- Concluded the degree with thesis "Estimating option prices with the Heston model"
+- Proudly selected for QuantStrats Scholarship Programme organised by Credit Suisse at which I got offered a permanent position as Quantitative Developer.
+- Relevant coursework: Algorithms & Data Structures, Numerical Methods & Computer Simulations, Statistics & Data Analysis.
+- Writing apps, analyses, and simulations in *Python*, *R*, *Julia*.
+// - Primarily interested in Mathematical Modelling, Probability Theory, and programming
+- Concluded the degree with thesis "Estimating option prices with the Heston model".
 
 == Work Experience
 
@@ -176,10 +176,10 @@
 )
 
 - Validating Counterparty Credit Risk models.
-  Performing analyses using *R*, Excel, and *SQL*; writing reports in *LaTeX*.
+  Performing analyses using *R*, *Python*, *MS Excel*, and *SQL*; writing reports in *LaTeX*.
 - Working with model developers on one side, and regulators on the other side; with many successes at coordinating findings with model owners.
-  This required a good balance of regulation-strictness and pragmatism.
-- Constantly working on streamlining and optimising validation work.
+  This requires a good balance of regulation-strictness and pragmatism.
+- Constantly working on streamlining and optimising validation work (also utilizing Artificial Intelligence).
 
 #work(
   title: "Quantitative Developer",
@@ -188,15 +188,14 @@
   dates: date_range(start-date: "2022-06", end-date: "2024-07"),
 )
 
+- Worked in a multicultural cross-timezone team.
 - Responsible for developing (*F\#* & *C\#*) and supporting front-office applications and services.
   The main product being a desktop application _Aura_ for portfolio pricing and scenario risk analysis used by 100+ traders worldwide.
-- My colleagues called me the "Master of Support".
-  I handled around 15 support cases quarterly, while the median was around 4.
-- I was the main driver and developer of a new solution that extracted a sought-after functionality from _Aura_ as a library and a web service.
-  I organized design meetings and guided discussions with internal clients.
-  Unfortunately, this project was cut short with UBS acquisition.
-- During the turbulent times of UBS takeover we experienced a shift in responsibilities towards portfolio migration.
-  We added support for several new trade types in the span of weeks.
+- Led the design and development of a new solution that extracted a high-demand feature from _Aura_ as a reusable plugin-library and a REST web service (*ASP.NET*), reducing coupling and enabling independent deployment.
+  Organised design meetings and guided discussions with internal clients.
+- Handled around 15 support cases quarterly (median: \~4), earned the title of "Master of Support" and a reputation as the team's go-to for diagnosing the hardest production issues.
+  Debugging production problems; assisting traders live or asynchronously.
+- During the UBS takeover, rapidly extended support for several new trade types within weeks.
 
 == Projects
 
@@ -205,18 +204,34 @@
   url: "github.com/B0ryskart0n/gra",
 )
 
-I like playing roguelike games, so I decided to write my own! It's a single-player science fiction roguelite.
-Still in early stages of development, but I have a concrete vision with an interesting plot and I'm pushing towards that.
+I like playing roguelike games, so I decided to write my own!
+It's a single-player sci-fi roguelite written in *Rust*.
+Built in the ECS architecture with concurrent schedules for game physics, and UI to keep systems decoupled and performant.
+// Still in early stages of development, but I have a concrete vision with an interesting plot and I'm pushing towards that.
+
+#project(
+  name: "balgo",
+  url: "github.com/B0ryskart0n/balgo",
+)
+
+A *Rust* library of algorithms and data structures, implemented from scratch with a focus on correctness and performance.
+Currently features A\* pathfinding, verified against benchmarks.
+An exercise in writing clean *Rust* and identifying performance bottlenecks.
+
+#project(
+  name: "dashperfin",
+  url: "github.com/B0ryskart0n/dashperfin",
+)
+
+A #strong[dash]board for #strong[per]sonal #strong[fin]ance that I use regularly to monitor my family's spendings.
+Written in *Python* and *Plotly Dash*.
 
 == Skills
-
-- *Programming languages*:
-  + _confident:_ Rust, R
-  + _comfortable_: F\#, Python
-  + _familiar_: C, C++, C\#
-- *Technologies*: GNU/Linux, Git, Visual Studio (Code), Microsoft Excel
-- *Software dev. practices*: Agile manifesto, Object-oriented programming, Functional programming, CI/CD
-- *Soft*: Patience, Knowledge sharing, Prioritization
+// TODO Consider using strong emph for keywords like: *_Rust_*
+- *Programming languages*: _confident_ *Rust*, *R*; _comfortable_ *F\#*, *Python*; _familiar_ *C*, *C++*, *C\#*.
+- *Technologies/Frameworks*: GNU/Linux, Git, Docker, Visual Studio (Code), TeamCity, Jenkins, GitLab, .NET, Dash.
+- *Software dev. practices*: Automated testing (unit, integration, regression), Agile manifesto, Concurrent systems, Object-oriented programming, Functional programming, CI/CD, Code review, Pair programming, LLM assistants.
+- *Soft*: Patience, Knowledge sharing, Prioritization.
 
 // #footnote(
 //   "I hereby give consent for my personal data included in this document to be used for the purposes of the recruitment process.",
