@@ -49,7 +49,7 @@
   }
 }
 #let date_range(start-date: "", end-date: "") = {
-  start-date + " " + $dash.en$ + " " + end-date
+  start-date + " " + sym.dash.en + " " + end-date
 }
 #let data_clause(content) = {
   place(
