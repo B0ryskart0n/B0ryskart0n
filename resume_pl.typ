@@ -12,7 +12,7 @@
 #let font_size = 10pt
 #let big_font_size = 2 * font_size
 
-#set document(author: author, title: author + " curriculum vitae)")
+#set document(author: author, title: author + " curriculum vitae")
 #set page(margin: 10mm, paper: "a4")
 #set text(
   font: "libertinus serif",
