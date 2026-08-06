@@ -46,28 +46,32 @@
 }
 
 //////////////////////////////////////////////////////////////////////////////// Contents
-#heading(level: 1, author)
+#pad(bottom: 5pt)[#heading(level: 1, author)]
 
 // Personal Info
-#align(center)[#(contact-item(phone, link-type: "tel:") + "  |  " + contact-item(email, link-type: "mailto:"))]
+#rect(inset: (x: 0pt, y: 5pt), outset: (x: 0pt, y: 5pt), fill: light_color)[
+  #h(1fr) #(contact-item(phone, link-type: "tel:") + "  |  " + contact-item(email, link-type: "mailto:")) #h(1fr)
+]
 
-I've been writing Rust seriously for a while now, and something about it just clicked for me.
-Maybe it's the mathematical rigour baked into the type system, or the way it forces you to think carefully before you act — which, as someone with a background in Applied Mathematics, feels like home.
-I came to Rust through F\# and functional programming more broadly, and I brought that mindset with me: composition over mutation, correctness over cleverness, understanding over shortcuts.
+Szukam pracy jako programista, ale programowanie nie jest dla mnie tylko zawodem #sym.dash.em to sposób myślenia, który poznałem na studiach i odnalazłem się w nim jak ryba w wodzie.
+Lubię, kiedy problem trzeba naprawdę zrozumieć, zanim zacznie się go rozwiązywać.
 
-My career so far has been in quantitative finance — working on front-office pricing systems at Credit Suisse, then validating risk models at Commerzbank.
-I learned a lot.
-I also learned that I'd prefer to spend my energy on problems someone cares about, with people who care about the craft.
+Zawodowo pracowałem przy aplikacjach trader-skich w Credit Suisse, a obecnie waliduję modele ryzyka w Commerzbanku.
+To dobre doświadczenia, ale z czasem odkryłem, że najwięcej satysfakcji daje mi programowanie samo w sobie.
+Najbardziej lubię języki statycznie typowane o cechach funkcyjnych #sym.dash.em moim ulubionym językiem jest Rust #sym.dash.em ale jestem otwarty na inne języki.
 
-What I bring is a particular kind of stubbornness — I don't move on until I actually understand something.
-My colleagues know that if I'm handling something, it's going to be resolved properly, not papered over.
-That same instinct shapes how I write code: I'd rather spend an extra hour getting the abstraction right than debug the same thing three months later.
+Uczę się szybko i chętnie, bo to po prostu lubię #sym.dash.em nie dlatego, że muszę.
+Podobnie z ogromną przyjemnością dzielę się wiedzą.
 
-Outside work, I'm slowly building a roguelite game in Rust.
-It's not a portfolio piece, it's just something I love making and I'd like to play it with my brothers someday.
+Nie boję się wyzwań, ani tego że czegoś jeszcze nie wiem #sym.dash.em wręcz przeciwnie, to zwykle najlepszy powód, żeby się tym zająć.
+Nie uciekam od trudnych problemów.
+Wolę spędzić dodatkową godzinę na dobrym zrozumieniu problemu niż wracać do niego za trzy miesiące przy problemie na produkcji.
 
-If any of this resonates, I'd genuinely enjoy a conversation.
+Jeśli szukają Państwo kogoś, kto lubi programować, traktuje jakość kodu poważnie i nie zatrzymuje się na #emph[good enough], chętnie porozmawiam.
 
-Borys Kopeć
+#align(right)[
+  Z poważaniem \
+  Borys Kopeć
+]
 
 #data_clause("Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesu rekrutacji.")
