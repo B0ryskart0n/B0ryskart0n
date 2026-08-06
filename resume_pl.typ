@@ -163,12 +163,9 @@
   degree: "inżynier Matematyki Stosowanej",
 )
 - Średnia ocen (ndst: 2,0, cel: 5,5): 5,26.
-// - Repeated Principal's Scholarship recipient
-// - Year representative
 - Zostałem wybrany do programu stypendialnego QuantStrats organizowanego przez Credit Suisse, w ramach którego otrzymałem stałą posadę jako Quantitative Developer.
 - Kluczowe przedmioty: Algorytmy i Struktury Danych, Metody Numeryczne, Symulacje Komputerowe, Statystyka i Analiza Danych.
 - Pisałem aplikacje, analizy i symulacje w *Python*, *R*, *Julia*. Projektowałem i odpytywałem bazy danych *SQL* (MariaDB).
-// - Primarily interested in Mathematical Modelling, Probability Theory, and programming
 - Zakończyłem studia pracą dyplomową "Wycena opcji przy pomocy modelu Hestona" i oceną _bardzo dobry_.
 
 == Doświadczenie zawodowe
