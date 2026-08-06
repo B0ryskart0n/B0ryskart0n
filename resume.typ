@@ -88,7 +88,7 @@
   phone: "",
   personal-site: "",
   author-font-size: 22pt,
-  font-size: 10pt,
+  font-size: 11pt,
   body,
 ) = {
   // Sets document metadata
@@ -178,8 +178,6 @@
   github: "github.com/B0ryskart0n",
   linkedin: "linkedin.com/in/boryskopec",
   phone: "+48 987 654 321",
-  //personal-site: "",
-  font-size: 11pt,
   author-position: center,
   personal-info-position: center,
 )
