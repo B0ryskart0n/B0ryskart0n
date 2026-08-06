@@ -63,7 +63,7 @@
   bottom-left: "",
   bottom-right: "",
 ) = {
-  rect(fill: rgb("#e9e4f8"))[
+  rect(fill: light_color)[
     #top-left #h(1fr) #top-right \
     #bottom-left #h(1fr) #bottom-right
   ]
