@@ -162,7 +162,7 @@
 // - Year representative
 - Proudly selected for QuantStrats Scholarship Programme organised by Credit Suisse at which I got offered a permanent position as Quantitative Developer.
 - Relevant coursework: Algorithms & Data Structures, Numerical Methods & Computer Simulations, Statistics & Data Analysis.
-- Writing apps, analyses, and simulations in *Python*, *R*, *Julia*.
+- Writing apps, analyses, and simulations in *Python*, *R*, *Julia*. Querying and designing databases with *SQL* (MariaDB).
 // - Primarily interested in Mathematical Modelling, Probability Theory, and programming
 - Concluded the degree with thesis "Estimating option prices with the Heston model".
 
@@ -179,7 +179,7 @@
   Performing analyses using *R*, *Python*, *MS Excel*, and *SQL*; writing reports in *LaTeX*.
 - Working with model developers on one side, and regulators on the other side; with many successes at coordinating findings with model owners.
   This requires a good balance of regulation-strictness and pragmatism.
-- Constantly working on streamlining and optimising validation work (also utilizing Artificial Intelligence for that purpose).
+- Constantly streamlining validation work, including responsible use of Artificial Intelligence for coding and document analysis.
 
 #work(
   title: "Quantitative Developer",
@@ -195,7 +195,7 @@
   Organised design meetings and guided discussions with internal clients.
 - Handled around 15 support cases quarterly (median: \~4), earned the title of "Master of Support" and a reputation as the team's go-to for diagnosing the hardest production issues.
   Oftentimes assisting traders live.
-- During the UBS takeover, rapidly extended support for several new trade types within weeks.
+- During the UBS merger, rapidly extended support for several new trade types within weeks.
 
 == Projects
 
@@ -206,7 +206,7 @@
 
 I like playing roguelike games, so I decided to write my own!
 It's a single-player sci-fi roguelite written in *Rust*.
-Built in the ECS architecture with concurrent schedules for game physics, and UI to keep systems decoupled and performant.
+Built with Bevy ECS architecture with concurrent schedules for game physics, and UI to keep systems decoupled and performant.
 // Still in early stages of development, but I have a concrete vision with an interesting plot and I'm pushing towards that.
 
 #project(
@@ -216,7 +216,7 @@ Built in the ECS architecture with concurrent schedules for game physics, and UI
 
 A *Rust* library of algorithms and data structures, implemented from scratch with a focus on correctness and performance.
 Currently features A\* pathfinding, verified against benchmarks.
-An exercise in writing clean *Rust* and identifying performance bottlenecks.
+An exercise in writing clean code and identifying performance bottlenecks.
 
 #project(
   name: "dashperfin",
@@ -229,8 +229,8 @@ Written in *Python* and *Plotly Dash*.
 == Skills
 // TODO Consider using strong emph for keywords like: *_Rust_*
 - *Programming languages*: _confident_ *Rust*, *R*; _comfortable_ *F\#*, *Python*; _familiar_ *C*, *C++*, *C\#*.
-- *Technologies/Frameworks*: GNU/Linux, Git, Docker, Visual Studio (Code), TeamCity, Jenkins, GitLab, .NET, Dash.
-- *Software dev. practices*: Automated testing (unit, integration, regression), Agile manifesto, Concurrent systems, Object-oriented programming, Functional programming, CI/CD, Code review, Pair programming, LLM assistants.
+- *Technologies*: GNU/Linux, Git, Docker, Visual Studio (Code), TeamCity, GitLab, .NET, Dash.
+- *Software dev. practices*: Automated testing (unit, integration, regression), Agile manifesto, Concurrent systems, Containerization, Object-oriented programming, Functional programming, CI/CD, Code review, Pair programming, LLM assistants.
 - *Soft*: Patience, Knowledge sharing, Prioritization.
 
 // #footnote(
