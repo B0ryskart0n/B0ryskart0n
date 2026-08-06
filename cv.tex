@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt]{article}
+% a4 = 210mm * 297mm
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=3mm, includefoot]{geometry}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{microtype}
+
+\overfullrule5pt % to be able to see overfull boxes better
+
+\pagestyle{empty} % get rid of page numbering
+
+\newlength\size
+\setlength\size{0.98\textwidth}
+
+\newlength{\leftwidth}
+\setlength{\leftwidth}{0.3\size}
+
+\newlength{\rightwidth}
+\setlength{\rightwidth}{\size}
+\addtolength{\rightwidth}{-\leftwidth}
+
+\definecolor{myBlue}{rgb}{0 0.5 1}
+
+\begin{document}
+\centering
+
+% \section*{\Huge \textbf{\textsf{Borys Kopeć}}}
+\textsf{\textbf{\Huge Borys Kopeć}}
+\vspace{10mm}
+
+\begin{minipage}[t][][t]{\leftwidth}
+  \section*{\textsf{\textcolor{myBlue}{A}bout me}}
+  Optimization addict,\newline
+  programming~enthusiast,\newline
+  mathematics~enjoyer,\newline
+  TeX~lover.\newline
+  Perfectionist.
+  % Work on this part. I think it's best to provide something more than a summary
+  \section*{\textsf{\textcolor{myBlue}{C}ontact}}
+  \begin{description}
+    \item \texttt{+}48 123 456 789
+    \item definitelyMy@gmail.com
+    \item %add LinkedIn profile link (with nice graphic?)
+    \item %add GitHub link (with nice graphic?)
+  \end{description}
+  \section*{\textsf{\textcolor{myBlue}{S}kills}}
+  \begin{description}
+    \item
+  \end{description}
+  \section*{\textsf{\textcolor{myBlue}{L}anguages}}
+  \textsf{
+    \begin{description}
+      \item
+    \end{description}}
+\end{minipage}
+\begin{minipage}[t][][t]{\rightwidth}
+  \section*{\textsf{\textcolor{orange}{P}rofessional experience}}
+  \textcolor{gray}{\footnotesize VI 2022 -- present}
+
+  \textbf{Credit Suisse --- Quantitative Developer}
+  % add highlights for used technologies
+
+  Working in a small team responsible for developing, testing, releasing and
+  supporting front-office applications and services.
+  % This definitely needs to be extended
+
+  \section*{\textsf{\textcolor{orange}{E}ducation}}
+  \textcolor{gray}{\footnotesize X 2019 -- II 2023}
+
+  \textbf{Wrocław University of Science and Technology
+    --- Applied Mathematics --- Bachelor of Science}
+  % add some highlights for used technologies
+
+  During my studies I was mainly focused on Mathematical Modelling,
+  Probability Theory and Programming.
+
+  In my thesis "Estimating option prices with the Heston model" We analyze
+  the Heston model in the context of the American option market. Estimation of
+  the model parameters is based on historical data of two stock market indices.
+  Market option price data is used as a basis for accuracy evaluation.
+  We also study relationships between option parameters and model's average error.
+  Analysis is conducted in comparison with the popular Black-Scholes model.
+\end{minipage}
+
+\let\thefootnote\relax
+\let\footnoterule\relax
+\footnote{I hereby give consent for my personal data included in this application
+  to be processed for the purposes of the recruitment process.}
+\end{document}
