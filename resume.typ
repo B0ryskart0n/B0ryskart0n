@@ -179,7 +179,7 @@
   Performing analyses using *R*, *Python*, *MS Excel*, and *SQL*; writing reports in *LaTeX*.
 - Working with model developers on one side, and regulators on the other side; with many successes at coordinating findings with model owners.
   This requires a good balance of regulation-strictness and pragmatism.
-- Constantly working on streamlining and optimising validation work (also utilizing Artificial Intelligence).
+- Constantly working on streamlining and optimising validation work (also utilizing Artificial Intelligence for that purpose).
 
 #work(
   title: "Quantitative Developer",
@@ -188,13 +188,13 @@
   dates: date_range(start-date: "2022-06", end-date: "2024-07"),
 )
 
-- Worked in a multicultural cross-timezone team.
+// - Worked in a multicultural cross-timezone team.
 - Responsible for developing (*F\#* & *C\#*) and supporting front-office applications and services.
   The main product being a desktop application _Aura_ for portfolio pricing and scenario risk analysis used by 100+ traders worldwide.
 - Led the design and development of a new solution that extracted a high-demand feature from _Aura_ as a reusable plugin-library and a REST web service (*ASP.NET*), reducing coupling and enabling independent deployment.
   Organised design meetings and guided discussions with internal clients.
 - Handled around 15 support cases quarterly (median: \~4), earned the title of "Master of Support" and a reputation as the team's go-to for diagnosing the hardest production issues.
-  Debugging production problems; assisting traders live or asynchronously.
+  Oftentimes assisting traders live.
 - During the UBS takeover, rapidly extended support for several new trade types within weeks.
 
 == Projects
