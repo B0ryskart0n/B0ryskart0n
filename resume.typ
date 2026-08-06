@@ -229,11 +229,13 @@ I enjoy helping people and sharing knowledge.
 )
 
 - Responsible for developing (*F\#* & *C\#*) and supporting front-office applications and services.
-  The main product being a desktop application for portfolio pricing and scenario risk analysis used by 100+ traders worldwide.
+  The main product being a desktop application _Aura_ for portfolio pricing and scenario risk analysis used by 100+ traders worldwide.
 - My colleagues called me the "Master of Support".
   I handled around 15 support cases quarterly, while the median was around 4.
-// TODO - Driver for the service solution
-- During the turbulent times of UBS acquisition we experienced a shift in responsibilities towards portfolio migration.
+- I was the main driver and developer of a new solution that extracted a sought-after functionality from _Aura_ as a library and a web service.
+  I organized design meetings and guided discussions with internal clients.
+  Unfortunately, this project was cut short with UBS acquisition.
+- During the turbulent times of UBS takeover we experienced a shift in responsibilities towards portfolio migration.
   We added support for several new trade types in the span of weeks.
 
 == Projects
