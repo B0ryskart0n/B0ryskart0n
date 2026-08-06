@@ -2,7 +2,6 @@
 % a4 = 210mm * 297mm
 
 \usepackage[a4paper, margin=4mm, includefoot]{geometry}
-\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage[fixed]{fontawesome5}
@@ -11,18 +10,18 @@
 
 \pagestyle{empty} % get rid of page numbering
 
-\newlength\size
-\setlength\size{0.99\textwidth}
+\newlength\pagesize
+\setlength\pagesize{0.99\textwidth}
 
 \newlength{\leftwidth}
-\setlength{\leftwidth}{0.32\size}
+\setlength{\leftwidth}{0.32\pagesize}
 
 \newlength{\rightwidth}
-\setlength{\rightwidth}{\size}
+\setlength{\rightwidth}{\pagesize}
 \addtolength{\rightwidth}{-\leftwidth}
 
-\newenvironment{items}[1]
-{\textbf{#1} \begin{itemize} \setlength{\itemsep}{0mm} \sf}
+\newenvironment{items}[1]%
+{\textbf{#1} \begin{itemize} \setlength{\itemsep}{0mm} \sf}%
 {\end{itemize}}
 
 \begin{document}
@@ -47,7 +46,7 @@
     \item Product delivery
   \end{items}
   \begin{items}{Technologies}
-    \item \Huge{.}NET
+    \item {\Huge.}NET
     \item F\#
     \item Visual Studio
     \item Git
@@ -76,19 +75,20 @@
   I have an excellent memory and am able to recall information off the top of my head.
 
   \section*{Professional experience}
-  \textcolor{gray}{\footnotesize VI 2022 -- present}
 
-  \textbf{Credit Suisse --- Quantitative Developer}
+  \textsl{VI 2022 -- present}\newline
+  \textbf{Quantitative Developer at Credit Suisse}
+  \vspace{2mm}
+  %\paragraph{}
 
   Working in a small team responsible for developing, testing, releasing and supporting front-office applications and services.
   % This definitely needs to be extended
 
   \section*{Education}
-  \textcolor{gray}{\footnotesize X 2019 -- II 2023}
-
-  \textbf{%
-    Wrocław University of Science and Technology --- Applied Mathematics --- Bachelor of Science
-  }
+  \textsl{X 2019 -- II 2023}\newline
+  \textbf{Bachelor of Science in Applied Mathematics at WUST}
+  \vspace{2mm}
+  %\paragraph{}
 
   During my studies I was mainly focused on Mathematical Modelling, Probability Theory and Programming.
 
