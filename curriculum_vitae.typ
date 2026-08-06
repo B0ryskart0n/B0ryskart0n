@@ -192,7 +192,7 @@
 
 - Rozwijałem (*F\#* & *C\#*) i wspierałem aplikacje i usługi front-office.
   Głównym produktem była aplikacja desktopowa _Aura_ używana do wyceny portfeli i analizy ryzyka używana przez ponad 100 traderów na całym świecie.
-- Przewodziłem projektowaniem i rozwojem nowego rozwiązania, które wyodrębniło kluczową funkcję z _Aura_ jako bibliotekę wtyczek i interfejs API REST (*ASP.NET*), umożliwiając niezależne wdrażanie.
+- Przewodziłem projektowaniem i rozwojem nowego rozwiązania, które wyodrębniło kluczową funkcję z _Aura_ jako bibliotekę wtyczek i interfejs REST API (*ASP.NET*), umożliwiając niezależne wdrażanie.
   Organizowałem spotkania projektowe i prowadziłem dyskusje z klientami wewnętrznymi.
 - Obsługiwałem około 15 przypadków wsparcia kwartalnie (mediana: \~4), czym zasłużyłem sobie na tytułu "Mistrza Supportu" i~reputacji jako osoby, do której zespół zwraca się w przypadku najtrudniejszych problemów produkcyjnych.
 - Podczas fuzji z UBS, dynamicznie rozszerzyliśmy funkcjonalność _Aura_ o kilka nowych typów transakcji w ciągu tygodni.
