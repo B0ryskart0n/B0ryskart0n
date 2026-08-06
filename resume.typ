@@ -1,6 +1,16 @@
 #let dark_color = rgb("#625892")
 #let light_color = rgb("#e9e4f8")
 
+// Helpers
+#let contact-item(value, prefix: "", link-type: "") = {
+  if value != "" {
+    if link-type != "" {
+      link(link-type + value)[#(prefix + value)]
+    } else {
+      value
+    }
+  }
+}
 #let date_range(start-date: "", end-date: "") = {
   start-date + " " + $dash.en$ + " " + end-date
 }
@@ -76,110 +86,60 @@
   )
 }
 
-#let resume(
-  author: "",
-  author-position: left,
-  personal-info-position: left,
-  pronouns: "",
-  location: "",
-  email: "",
-  github: "",
-  linkedin: "",
-  phone: "",
-  personal-site: "",
-  author-font-size: 22pt,
-  font-size: 11pt,
-  body,
-) = {
-  // Sets document metadata
-  set document(author: author, title: author)
+#let author = "Borys Kopeć"
+#let email = "boryskopec00@gmail.com"
+#let github = "github.com/B0ryskart0n"
+#let linkedin = "linkedin.com/in/boryskopec"
+#let personal-site = ""
+#let phone = "+48 987 654 321"
 
-  // Document-wide formatting, including font and margins
-  set text(
-    font: "libertinus serif",
-    size: font-size,
-    lang: "en",
-    // Disable ligatures so ATS systems do not get confused when parsing fonts.
-    ligatures: false,
-  )
+#let font_size = 11pt
+#let big_font_size = 2 * font_size
 
-  // Reccomended to have 0.5in margin on all sides
-  set page(
-    margin: 10mm,
-    paper: "a4",
-  )
+#set document(author: author, title: author + " resume")
+#set page(margin: 10mm, paper: "a4")
+#set text(
+  font: "libertinus serif",
+  size: font_size,
+  lang: "en",
+  // Disable ligatures so ATS systems do not get confused when parsing fonts.
+  ligatures: false,
+)
+#set par(justify: true)
 
-  // Link styles
-  show link: underline
+#show link: underline
+#show heading: set text(
+  fill: rgb(dark_color),
+)
+// Name will be aligned left, bold and big
+#show heading.where(level: 1): heading => [
+  #set align(center)
+  #set text(size: big_font_size)
+  #pad(heading.body)
+]
+#show heading.where(level: 2): heading => [
+  #pad(top: 0pt, bottom: -10pt)[#smallcaps(heading.body)]
+  #line(length: 100%, stroke: 1pt)
+]
 
-  // Small caps for section titles
-  show heading.where(level: 2): it => [
-    #pad(top: 0pt, bottom: -10pt, [#smallcaps(it.body)])
-    #line(length: 100%, stroke: 1pt)
-  ]
+// Name
+#heading(level: 1, author)
 
-  // Accent Color Styling
-  show heading: set text(
-    fill: rgb(dark_color),
-  )
-
-  // Name will be aligned left, bold and big
-  show heading.where(level: 1): it => [
-    #set align(author-position)
-    #set text(
-      weight: 700,
-      size: author-font-size,
-    )
-    #pad(it.body)
-  ]
-
-  // Level 1 Heading
-  [= #(author)]
-
-  // Personal Info Helper
-  let contact-item(value, prefix: "", link-type: "") = {
-    if value != "" {
-      if link-type != "" {
-        link(link-type + value)[#(prefix + value)]
-      } else {
-        value
-      }
+// Personal Info
+#pad(
+  top: 0.25em,
+  align(center)[
+    #{
+      let items = (
+        contact-item(phone),
+        contact-item(email, link-type: "mailto:"),
+        contact-item(github, link-type: "https://"),
+        contact-item(linkedin, link-type: "https://"),
+        contact-item(personal-site, link-type: "https://"),
+      )
+      items.filter(x => x != none).join("  |  ")
     }
-  }
-
-  // Personal Info
-  pad(
-    top: 0.25em,
-    align(personal-info-position)[
-      #{
-        let items = (
-          contact-item(pronouns),
-          contact-item(phone),
-          contact-item(location),
-          contact-item(email, link-type: "mailto:"),
-          contact-item(github, link-type: "https://"),
-          contact-item(linkedin, link-type: "https://"),
-          contact-item(personal-site, link-type: "https://"),
-        )
-        items.filter(x => x != none).join("  |  ")
-      }
-    ],
-  )
-
-  // Main body.
-  set par(justify: true)
-  body
-}
-
-#show: resume.with(
-  author: "Borys Kopeć",
-  //location: "Wrocław, Poland",
-  email: "boryskopec00@gmail.com",
-  github: "github.com/B0ryskart0n",
-  linkedin: "linkedin.com/in/boryskopec",
-  phone: "+48 987 654 321",
-  author-position: center,
-  personal-info-position: center,
+  ],
 )
 
 #set align(center)
@@ -249,6 +209,7 @@ I like playing roguelike games, so I decided to write my own! It's a single-play
 Still in early stages of development, but I have a concrete vision with an interesting plot and I'm pushing towards that.
 
 == Skills
+
 - *Programming languages*:
   + _confident:_ Rust, R
   + _comfortable_: F\#, Python
