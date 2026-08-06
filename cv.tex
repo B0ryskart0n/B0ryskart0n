@@ -1,41 +1,61 @@
-\documentclass[a4paper,12pt]{article}
-% a4 = 210mm * 297mm
+% - [x] wymyśleć jakieś sukcesy z metrykami
+% - [x] appreciated for / praised for
+% - [x] Soft skille w przykładach
+% - [?] top 3 rzeczy które po zatrudnieniu mogę wnieść do zespołu
+% - [ ] We -> I w CSie
+% - [ ] Wspomnieć we wstępie o sposobie myślenia, komunikacji z komputerem itd, myślenie schematami
+% - [ ] Wspomnieć o Quant Strats Scholarship w uczelni i CS
 
-\usepackage[a4paper, margin=12pt, top=36pt]{geometry}
-\usepackage{hyperref}
-\usepackage{microtype}
+\documentclass[a4paper, 12pt]{article} % a4 = 210mm * 297mm
+
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=12pt, top=36pt, right=12pt, bottom=12pt]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage%[stretch = 25, shrink = 25, tracking=true, letterspace=30]%
+{microtype}
+\usepackage{xcolor}
 \usepackage[fixed]{fontawesome5}
 
-\overfullrule5pt % to be able to see overfull boxes better
+\definecolor{lightcolor}{HTML}{e9e4f8}
+\definecolor{darkcolor}{HTML}{625892}
+\newenvironment{items}[1]{\centering\textbf{\color{darkcolor}\large#1} \begin{itemize} \setlength{\itemsep}{0pt}}{\end{itemize}}
+% All sans serif
+\renewcommand{\familydefault}{\sfdefault}
 
-\pagestyle{empty} % get rid of page numbering
+% See overfull boxes better
+\overfullrule10pt
 
+% \setlength{\topskip}{0pt}
+% \setlength{\parindent}{0pt}
+\setlength{\fboxsep}{0pt}
+% \setlength{\itemsep}{0pt}
+\pagestyle{empty}
+
+% Define minipage sizes
 \newlength\pagesize
-\setlength\pagesize{0.99\textwidth}
-
+\setlength\pagesize{\textwidth}
 \newlength{\leftwidth}
 \setlength{\leftwidth}{0.3\pagesize}
-
 \newlength{\rightwidth}
 \setlength{\rightwidth}{\pagesize}
 \addtolength{\rightwidth}{-\leftwidth}
-
-\newenvironment{items}[1]%
-{\textbf{#1} \begin{itemize} \setlength{\itemsep}{0pt} \sf}%
-{\end{itemize}}
+\newlength\minispace
+\setlength\minispace{12pt}
+\addtolength{\leftwidth}{-0.5\minispace}
+\addtolength{\rightwidth}{-0.5\minispace}
 
 \begin{document}
-\centering
+\textbf{\hfill\Huge\color{darkcolor}Borys Kopeć\hfill}
+\vspace{24pt}
 
-\textsf{\textbf{\Huge Borys Kopeć}}
-\vspace{30pt}
-
-\begin{minipage}[t][][t]{\leftwidth}
-  \begin{description} \sf
-    \item \texttt{+}48 123 456 789
-    \item boryskopec00@gmail.com
-    \item \faLinkedin \href{https://linkedin.com/in/boryskopec}{in/boryskopec}
-    \item \faGithubSquare \href{https://github.com/B0ryskart0n}{B0ryskart0n}
+\noindent\colorbox{lightcolor}{%
+\begin{minipage}[t][][s]{\leftwidth}
+  \vspace{1em}
+  \begin{description}
+    \item \faPhoneSquare \texttt{+}48 987 654 321
+    \item \faEnvelopeSquare boryskopec00@gmail.com
+    \item \faLinkedin \href{https://linkedin.com/in/boryskopec}{\texttt{/in/boryskopec}}
+    \item \faGithubSquare \href{https://github.com/B0ryskart0n}{\texttt{/B0ryskart0n}}
   \end{description}
   \begin{items}{Software development}
     \item Agile manifesto
@@ -44,71 +64,84 @@
     \item Continous integration\newline Continous delivery
   \end{items}
   \begin{items}{Technologies}
-    \item {\Huge.}NET
-    \item F{\large\texttt\#}
-    \item Visual Studio
+    \item Rust
+    \item F\texttt{\#}
+    \item Visual Studio (Code)
     \item Microsoft Excel
     \item Git
-    \item \LaTeX
-    \item SQL
     \item Linux
   \end{items}
   \begin{items}{Soft skills}
     \item Excellent memory
-    \item Explaining ideas
+    \item Knowledge sharing
     \item Patience
     \item Public speaking
     \item Critical thinking
-    \item Prioritzation
+    \item Prioritzation and\newline working under pressure
   \end{items}
-\end{minipage}
-\begin{minipage}[t][][t]{\rightwidth} \setlength{\parskip}{3pt}
-  \section*{About me}
-  I love applying maths and programming is my favorite way of doing that.
-  
-  I'm a very curious person and a lifelong learner.
+  \begin{items}{Privately}
+    \item Developing my own\newline roguelike
+    \item Board-gaming with\newline friends and family
+  \end{items}
+  \vspace{1em}
+\end{minipage}}%
+\hskip\minispace%
+\begin{minipage}[t][][b]{\rightwidth}%
+  \setlength{\parskip}{4pt}
+  I enjoy applying maths, and programming is my favorite way of doing that.
+  I also love games, both board and computer ones, and my free time revolves around those.
+
+  I'm a very curious and critical person.
   I ask a lot of questions and I always try to get to the bottom of things.
+
+  My favourite part of pretty much any work is supporting people and sharing knowledge.
+  I'm always eager to help.
+
+  \vspace{-3\parskip}
+  \section*{\centering\color{darkcolor}Professional experience}
+  {\textbf{Model Validator {\sf at} Commerzbank}\hfill\textcolor{gray}{\sl VIII 2024 -- present}}
+  \vspace{\parskip}
   
-  I enjoy supporting and teaching people, I'm always eager to help.
+  Validating Counterparty Credit Risk models.
+  Performing analyses using \textbf{R}, \textbf{Excel}, and \textbf{SQL}, writing reports in \textbf{\LaTeX}.
+  Working with model developers on one side, and regulators on the other side.
 
-  \section*{Professional experience}
+  So far, I've performed several regular validations, such as: IMM coverage, quarterly ISDA SIMM backtesting.
+  I've had solid success at coordinating validation results with model owners, which required a good balance of regulation-strictness and pragmatism.
 
-  \textsl{VI 2022 -- present}\newline
-  \textbf{Quantitative Developer at Credit Suisse}
-  \vspace{2\parskip}
-
-  Working in a small team responsible for developing, testing, releasing and supporting front-office applications and services.
+  Constantly working on streamlining and optimising validation work.
   
-  The main application my team is responsible for is a multi-functional tool for portfolio pricing.
-  In the recent months I've also been a driver in designing and developing a new service solution.
+  \vspace{3\parskip}
+  {\textbf{Quantitative Developer {\sf at} Credit Suisse}\hfill\textcolor{gray}{\sl VI 2022 -- VII 2024}}
+  \vspace{\parskip}
   
-  While working at these projects, I've learned a lot about product delivery:
-  Creating a great product is an iterative process, but one can't lose track of client needs.
-  There needs to be good balance between high-level solution design and low-level implementation details.
-  \section*{Education}
-  \textsl{X 2019 -- II 2023}\newline
-  \textbf{Bachelor of Science in Applied Mathematics at Wrocław University of Science and Technology}
-  \vspace{2\parskip}
+  Worked in a team responsible for developing (\textbf{F\texttt{\#}} \& \textbf{C\texttt{\#}}) and supporting front-office applications and services.
+  The main tool my team was responsible for was a desktop application for portfolio pricing and scenario risk analysis.
+  
+  My colleagues called me the "Master of Support".
+  My number of quarterly handled support cases was around 15, while the median was around 3.
 
-  Mainly learned about the following (with their applications):
-  \begin{itemize} \setlength{\itemsep}{0pt} \setlength{\parskip}{1pt}
-    \item Algebra \& Calculus
-    \item Ordinary Differential Equations
-    \item Probability Theory \& Stochastic Calculus
-    \item Statistics \& Data Analysis
-    \item Numerical Methods \& Computer Simulations
-    \item Financial and Actuarial Mathematics
-  \end{itemize}
+  During the turbulent times of UBS acquisition we experienced a shift in responsibilities towards the portfolio migration.
+  We added support for several new trade types in the span of weeks.
 
+  \vspace{-3\parskip}
+  \section*{\centering\color{darkcolor} Education}
+  {\textbf{Bachelor of Science in Applied Mathematics {\sf at} Wrocław University of Science and Technology}\hfill\textcolor{gray}{\sl X 2019 -- II 2023}}
+  \vspace{\parskip}
+
+  Learned on various mathematical topics, concurrently implementing most of the learnt concepts.
+  I've been writing apps, analyses, tests, and simulations in \textbf{Python}, \textbf{R}, and \textbf{Julia}.
   I was primarily interested in Mathematical Modelling and Probability Theory.
-  Applying those while programming (mostly in \textsf{Julia} \& \textsf{R}) was pure joy to me.
+  I've concluded the degree with my thesis "Estimating option prices with the Heston model".
 
-  I've concluded the studies with my thesis "Estimating option prices with the Heston model".
+  Repeated WUST Principal's Scholarship recipient. Year representative.
+  Proudly selected for QuantStrats Scholarship Programme organised by Credit Suisse at which I got offered a Quantitative Developer position (described above).
 \end{minipage}
+\vspace{1em}
+
+\noindent\textit{\footnotesize This document has been crafted by me, with no AI usage, in \LaTeX.}
 
 \let\thefootnote\relax
 \let\footnoterule\relax
-\footnote{
-  I hereby give consent for my personal data included in this document to be used for the purposes of the recruitment process.
-}
+\footnote{I hereby give consent for my personal data included in this document to be used for the purposes of the recruitment process.}
 \end{document}
