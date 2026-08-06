@@ -72,7 +72,10 @@
 // -
 
 == Skills
-- *Programming Languages*: Rust, F\#, R, Python
+- *Programming languages*:
+  + _confident:_ Rust, R
+  + _comfortable_: F\#, Python
+  + _familiar_: C, C++, C\#
 - *Technologies*: GNU/Linux, Git, Visual Studio (Code), Microsoft Excel
-- *Software development practices*: Agile manifesto, Object-oriented programming, Functional programming, Continuous integration & delivery
+- *Software dev. practices*: Agile manifesto, Object-oriented programming, Functional programming, CI/CD
 - *Soft*: Patience, Knowledge sharing, Prioritization
