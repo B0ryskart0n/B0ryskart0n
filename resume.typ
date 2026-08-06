@@ -51,6 +51,11 @@
 #let date_range(start-date: "", end-date: "") = {
   start-date + " " + $dash.en$ + " " + end-date
 }
+#let data_clause(content) = {
+  place(
+    bottom + right,
+  )[#emph(content)]
+}
 
 #let generic-two-by-two(
   top-left: "",
@@ -233,7 +238,4 @@ Written in *Python* and *Plotly Dash*.
 - *Software dev. practices*: Automated testing (unit, integration, regression), Agile manifesto, Concurrent systems, Containerization, Object-oriented programming, Functional programming, CI/CD, Code review, Pair programming, LLM assistants.
 - *Soft*: Patience, Knowledge sharing, Prioritization.
 
-// #footnote(
-//   "I hereby give consent for my personal data included in this document to be used for the purposes of the recruitment process.",
-//   numbering: _ => "",
-// )
+#data_clause("I hereby consent to my personal data included in this resume being processed for recruitment purposes.")
