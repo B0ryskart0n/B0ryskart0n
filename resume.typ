@@ -223,7 +223,7 @@ An exercise in writing clean *Rust* and identifying performance bottlenecks.
   url: "github.com/B0ryskart0n/dashperfin",
 )
 
-A #strong[dash]board for #strong[per]sonal #strong[fin]ance that I use regularly to monitor my family's spendings.
+A #underline[dash]board for #underline[per]sonal #underline[fin]ance that I use regularly to monitor my family's spendings.
 Written in *Python* and *Plotly Dash*.
 
 == Skills
