@@ -9,7 +9,7 @@
 //////////////////////////////////////////////////////////////////////////////// Configuration
 #let dark_color = rgb("#625892")
 #let light_color = rgb("#e9e4f8")
-#let font_size = 11pt
+#let font_size = 10pt
 #let big_font_size = 2 * font_size
 
 #set document(author: author, title: author + " resume")
@@ -128,7 +128,7 @@
 
 // Personal Info
 #pad(
-  top: 0.25em,
+  top: 1em,
   align(center)[
     #{
       let items = (
@@ -143,12 +143,11 @@
   ],
 )
 
-#set align(center)
-I love applying maths, and programming is my favorite way of doing that.
-I may not be the fastest learner, but I'm definitely the most meticulous one.
-I ask a lot of questions and I always try to get to the bottom of things.
-I enjoy helping people and sharing knowledge.
-#set align(left)
+#align(center)[
+  I love building systems where correctness and performance both matter.
+  I am meticulous by nature: I ask a lot of questions, always try to get to the bottom of things, and I take reliability seriously.
+  I enjoy helping people and sharing knowledge.
+]
 
 == Education
 
