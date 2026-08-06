@@ -2,7 +2,7 @@
 % a4 = 210mm * 297mm
 
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper, margin=5mm, includefoot]{geometry}
+\usepackage[a4paper, margin=4mm, includefoot]{geometry}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{lipsum}
@@ -23,6 +23,8 @@
 \setlength{\rightwidth}{\size}
 \addtolength{\rightwidth}{-\leftwidth}
 
+\newenvironment{items}[1]{\sf\section*{#1}\begin{itemize}\setlength{\itemsep}{0mm}}{\end{itemize}}
+
 \begin{document}
 \centering
 
@@ -42,15 +44,21 @@
       \item \faGithubSquare \href{https://github.com/B0ryskart0n}{B0ryskart0n}
     \end{description}
   }
-  \section*{\textsf{Skills}}
-  \begin{description}
+  \begin{items}{Technologies}
     \item
-  \end{description}
-  \section*{\textsf{Languages}}
-  \textsf{
-    \begin{description}
-      \item
-    \end{description}}
+  \end{items}
+  \begin{items}{Technologies}
+    \item \Huge{.}NET
+    \item F\#
+    \item Visual Studio
+    \item Git
+    \item \LaTeX
+    \item JIRA
+    \item MS Excel
+  \end{items}
+  \begin{items}{Interpersonal skills}
+    \item
+  \end{items}
 \end{minipage}
 \begin{minipage}[t][][t]{\rightwidth}
   \section*{\textsf{About me}}
