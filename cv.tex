@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 % a4 = 210mm * 297mm
 
-\usepackage[a4paper, margin=4mm, includefoot]{geometry}
+\usepackage[a4paper, margin=4mm]{geometry}
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage[fixed]{fontawesome5}
@@ -55,30 +55,23 @@
     \item SQL
   \end{items}
 \end{minipage}
-\begin{minipage}[t][][t]{\rightwidth}
+\begin{minipage}[t][][t]{\rightwidth} \setlength{\parskip}{1mm}
   \section*{About me}
-  I have the ability to ask accurate (and often challenging) questions.
-  I always try to get to the bottom of things.
-
-  My style of work is systematic and detailed --- I strive for perfect solutions.
-
+  My style of work is systematic and detailed --- I strive for perfect solutions.\newline
   I am critical and thoughtful of what I'm doing.
-
+  I have the ability to ask accurate questions and I always try to get to the bottom of things.\newline
   Speaking up is not a problem to me.
-  I try to bring ideas to the table and advocate good ones.
-
-  My focus is on improvement.
-  I am a livelong learner and gaining knowledge is very important to me.
-
+  I try to bring ideas to the table and advocate good ones.\newline
+  I focus on improvement.
+  I'm a livelong learner and gaining knowledge is very important to me.\newline
+  Having an excellent memory I am often able to recall information off the top of my head.\newline
   I enjoy supporting people very much, I'm always eager to help.
-
-  I have an excellent memory and am able to recall information off the top of my head.
 
   \section*{Professional experience}
 
   \textsl{VI 2022 -- present}\newline
   \textbf{Quantitative Developer at Credit Suisse}
-  \vspace{2mm}
+  \vspace{2\parskip}
   %\paragraph{}
 
   Working in a small team responsible for developing, testing, releasing and supporting front-office applications and services.
@@ -87,16 +80,22 @@
   \section*{Education}
   \textsl{X 2019 -- II 2023}\newline
   \textbf{Bachelor of Science in Applied Mathematics at WUST}
-  \vspace{2mm}
+  \vspace{2\parskip}
   %\paragraph{}
 
-  During my studies I was mainly focused on Mathematical Modelling, Probability Theory and Programming.
+  During my studies I was mainly interested in Mathematical Modelling, Probability Theory and Programming.
 
-  In my thesis "Estimating option prices with the Heston model" we analyze the Heston model in the context of the American option market.
-  Estimation of the model parameters is based on historical data of two stock market indices.
-  Market option price data is used as a basis for accuracy evaluation.
-  We also study relationships between option parameters and model's average error.
-  Analysis is conducted in comparison with the popular Black-Scholes model.
+  Something something.
+
+  My thesis' --- "Estimating option prices with the Heston model" --- abstract:
+
+  \textsl{
+    We analyze the Heston model in the context of the American option market.
+    Estimation of the model parameters is based on historical data of two stock market indices.
+    Market option price data is used as a basis for accuracy evaluation.
+    We also study relationships between option parameters and model's average error.
+    Analysis is conducted in comparison with the popular Black-Scholes model.
+  }
 \end{minipage}
 
 \let\thefootnote\relax
