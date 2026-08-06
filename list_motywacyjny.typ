@@ -62,7 +62,6 @@ Najbardziej lubię języki statycznie typowane o cechach funkcyjnych #sym.dash.e
 
 Uczę się szybko i chętnie, bo to po prostu lubię #sym.dash.em nie dlatego, że muszę.
 Podobnie z ogromną przyjemnością dzielę się wiedzą.
-
 Nie boję się wyzwań, ani tego że czegoś jeszcze nie wiem #sym.dash.em wręcz przeciwnie, to zwykle najlepszy powód, żeby się tym zająć.
 Nie uciekam od trudnych problemów.
 Wolę spędzić dodatkową godzinę na dobrym zrozumieniu problemu niż wracać do niego za trzy miesiące przy problemie na produkcji.
