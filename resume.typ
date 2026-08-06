@@ -16,6 +16,10 @@
   personal-info-position: center,
 )
 
+#let date_range(start-date: "", end-date: "") = {
+  start-date + " " + $dash.en$ + " " + end-date
+}
+
 /*
  * Lines that start with == are formatted into section headings
  * You can use the specific formatting functions if needed
@@ -34,7 +38,7 @@
 #edu(
   institution: "Wrocław University of Science and Technology",
   location: "Wrocław, Poland",
-  dates: dates-helper(start-date: "X 2019", end-date: "II 2023"),
+  dates: date_range(start-date: "X 2019", end-date: "II 2023"),
   degree: "Bachelor of Science in Applied Mathematics",
   consistent: true,
 )
@@ -53,14 +57,14 @@
   title: "Model Validation Specialist",
   location: "Wrocław, Poland",
   company: "Commerzbank",
-  dates: dates-helper(start-date: "VIII 2024", end-date: "present"),
+  dates: date_range(start-date: "VIII 2024", end-date: "present"),
 )
 
 #work(
   title: "Quantitative Developer",
   location: "Wrocław, Poland",
   company: "Credit Suisse",
-  dates: dates-helper(start-date: "VI 2022", end-date: "VII 2024"),
+  dates: date_range(start-date: "VI 2022", end-date: "VII 2024"),
 )
 
 // == Projects
