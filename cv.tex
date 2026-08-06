@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 % a4 = 210mm * 297mm
 
-\usepackage[a4paper, margin=4mm]{geometry}
+\usepackage[a4paper, margin=12pt]{geometry}
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage[fixed]{fontawesome5}
@@ -14,24 +14,24 @@
 \setlength\pagesize{0.99\textwidth}
 
 \newlength{\leftwidth}
-\setlength{\leftwidth}{0.32\pagesize}
+\setlength{\leftwidth}{0.3\pagesize}
 
 \newlength{\rightwidth}
 \setlength{\rightwidth}{\pagesize}
 \addtolength{\rightwidth}{-\leftwidth}
 
 \newenvironment{items}[1]%
-{\textbf{#1} \begin{itemize} \setlength{\itemsep}{0mm} \sf}%
+{\textbf{#1} \begin{itemize} \setlength{\itemsep}{0pt} \sf}%
 {\end{itemize}}
 
 \begin{document}
 \centering
 
 \textsf{\textbf{\Huge Borys Kopeć}}
-\vspace{7mm}
+\vspace{20pt}
 
 \begin{minipage}[t][][t]{\leftwidth}
-  \begin{description} \setlength{\itemsep}{0mm} \sf
+  \begin{description} \setlength{\itemsep}{0pt} \sf
     \item \texttt{+}48 123 456 789
     \item boryskopec00@gmail.com
     \item \faLinkedin \href{https://linkedin.com/in/boryskopec}{in/boryskopec}
@@ -84,7 +84,7 @@
   %\paragraph{}
 
   Mainly learned about the following (with their applications):
-  \begin{itemize} \setlength{\itemsep}{0mm} \setlength{\parskip}{1pt}
+  \begin{itemize} \setlength{\itemsep}{0pt} \setlength{\parskip}{1pt}
     \item Algebra \& Calculus
     \item Ordinary Differential Equations
     \item Probability Theory \& Stochastic Calculus
