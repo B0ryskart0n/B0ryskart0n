@@ -1,103 +1,5 @@
-#let resume(
-  author: "",
-  author-position: left,
-  personal-info-position: left,
-  pronouns: "",
-  location: "",
-  email: "",
-  github: "",
-  linkedin: "",
-  phone: "",
-  personal-site: "",
-  accent-color: "#000000",
-  author-font-size: 20pt,
-  font-size: 10pt,
-  body,
-) = {
-  // Sets document metadata
-  set document(author: author, title: author)
-
-  // Document-wide formatting, including font and margins
-  set text(
-    font: "libertinus serif",
-    size: font-size,
-    lang: "en",
-    // Disable ligatures so ATS systems do not get confused when parsing fonts.
-    ligatures: false,
-  )
-
-  // Reccomended to have 0.5in margin on all sides
-  set page(
-    margin: 10mm,
-    paper: "a4",
-  )
-
-  // Link styles
-  show link: underline
-
-  // Small caps for section titles
-  show heading.where(level: 2): it => [
-    #pad(top: 0pt, bottom: -10pt, [#smallcaps(it.body)])
-    #line(length: 100%, stroke: 1pt)
-  ]
-
-  // Accent Color Styling
-  show heading: set text(
-    fill: rgb(accent-color),
-  )
-
-  show link: set text(
-    fill: rgb(accent-color),
-  )
-
-  // Name will be aligned left, bold and big
-  show heading.where(level: 1): it => [
-    #set align(author-position)
-    #set text(
-      weight: 700,
-      size: author-font-size,
-    )
-    #pad(it.body)
-  ]
-
-  // Level 1 Heading
-  [= #(author)]
-
-  // Personal Info Helper
-  let contact-item(value, prefix: "", link-type: "") = {
-    if value != "" {
-      if link-type != "" {
-        link(link-type + value)[#(prefix + value)]
-      } else {
-        value
-      }
-    }
-  }
-
-  // Personal Info
-  pad(
-    top: 0.25em,
-    align(personal-info-position)[
-      #{
-        let items = (
-          contact-item(pronouns),
-          contact-item(phone),
-          contact-item(location),
-          contact-item(email, link-type: "mailto:"),
-          contact-item(github, link-type: "https://"),
-          contact-item(linkedin, link-type: "https://"),
-          contact-item(personal-site, link-type: "https://"),
-        )
-        items.filter(x => x != none).join("  |  ")
-      }
-    ],
-  )
-
-  // Main body.
-  set par(justify: true)
-
-  body
-}
+#let dark_color = rgb("#625892")
+#let light_color = rgb("#e9e4f8")
 
 #let date_range(start-date: "", end-date: "") = {
   start-date + " " + $dash.en$ + " " + end-date
@@ -118,7 +20,7 @@
   left: "",
   right: "",
 ) = {
-  rect(fill: rgb("#e9e4f8"))[
+  rect(fill: light_color)[
     #left #h(1fr) #right
   ]
 }
@@ -174,6 +76,101 @@
   )
 }
 
+#let resume(
+  author: "",
+  author-position: left,
+  personal-info-position: left,
+  pronouns: "",
+  location: "",
+  email: "",
+  github: "",
+  linkedin: "",
+  phone: "",
+  personal-site: "",
+  author-font-size: 22pt,
+  font-size: 10pt,
+  body,
+) = {
+  // Sets document metadata
+  set document(author: author, title: author)
+
+  // Document-wide formatting, including font and margins
+  set text(
+    font: "libertinus serif",
+    size: font-size,
+    lang: "en",
+    // Disable ligatures so ATS systems do not get confused when parsing fonts.
+    ligatures: false,
+  )
+
+  // Reccomended to have 0.5in margin on all sides
+  set page(
+    margin: 10mm,
+    paper: "a4",
+  )
+
+  // Link styles
+  show link: underline
+
+  // Small caps for section titles
+  show heading.where(level: 2): it => [
+    #pad(top: 0pt, bottom: -10pt, [#smallcaps(it.body)])
+    #line(length: 100%, stroke: 1pt)
+  ]
+
+  // Accent Color Styling
+  show heading: set text(
+    fill: rgb(dark_color),
+  )
+
+  // Name will be aligned left, bold and big
+  show heading.where(level: 1): it => [
+    #set align(author-position)
+    #set text(
+      weight: 700,
+      size: author-font-size,
+    )
+    #pad(it.body)
+  ]
+
+  // Level 1 Heading
+  [= #(author)]
+
+  // Personal Info Helper
+  let contact-item(value, prefix: "", link-type: "") = {
+    if value != "" {
+      if link-type != "" {
+        link(link-type + value)[#(prefix + value)]
+      } else {
+        value
+      }
+    }
+  }
+
+  // Personal Info
+  pad(
+    top: 0.25em,
+    align(personal-info-position)[
+      #{
+        let items = (
+          contact-item(pronouns),
+          contact-item(phone),
+          contact-item(location),
+          contact-item(email, link-type: "mailto:"),
+          contact-item(github, link-type: "https://"),
+          contact-item(linkedin, link-type: "https://"),
+          contact-item(personal-site, link-type: "https://"),
+        )
+        items.filter(x => x != none).join("  |  ")
+      }
+    ],
+  )
+
+  // Main body.
+  set par(justify: true)
+  body
+}
+
 #show: resume.with(
   author: "Borys Kopeć",
   //location: "Wrocław, Poland",
@@ -182,7 +179,6 @@
   linkedin: "linkedin.com/in/boryskopec",
   phone: "+48 987 654 321",
   //personal-site: "",
-  accent-color: "#625892",
   font-size: 11pt,
   author-position: center,
   personal-info-position: center,
@@ -238,7 +234,7 @@ I enjoy helping people and sharing knowledge.
   The main product being a desktop application for portfolio pricing and scenario risk analysis used by 100+ traders worldwide.
 - My colleagues called me the "Master of Support".
   I handled around 15 support cases quarterly, while the median was around 4.
-// - Driver for the service solution
+// TODO - Driver for the service solution
 - During the turbulent times of UBS acquisition we experienced a shift in responsibilities towards portfolio migration.
   We added support for several new trade types in the span of weeks.
 
