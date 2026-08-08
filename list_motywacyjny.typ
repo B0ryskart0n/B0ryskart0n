@@ -57,16 +57,19 @@ Szukam pracy jako programista, ale programowanie nie jest dla mnie tylko zawodem
 Lubię, kiedy problem trzeba naprawdę zrozumieć, zanim zacznie się go rozwiązywać.
 
 Zawodowo pracowałem przy aplikacjach trader-skich w Credit Suisse, a obecnie waliduję modele ryzyka w Commerzbanku.
-To dobre doświadczenia, ale z czasem odkryłem, że najwięcej satysfakcji daje mi programowanie samo w sobie.
+To doświadczenia, które nauczyły mnie pracować w środowiskach o wysokich wymaganiach co do jakości i precyzji.
+Odkryłem przy tym jak bardzo programowanie mnie napędza.
 Najbardziej lubię języki statycznie typowane o cechach funkcyjnych #sym.dash.em moim ulubionym językiem jest Rust #sym.dash.em ale jestem otwarty na inne języki.
 
 Uczę się szybko i chętnie, bo to po prostu lubię #sym.dash.em nie dlatego, że muszę.
-Podobnie z ogromną przyjemnością dzielę się wiedzą.
+Po godzinach rozwijam własne projekty (grę roguelike, wielowątkowy serwer http, i inne) jak i kontrybuuję do projektów otwartoźródłowych.
+Zgłębiane programowania w takim sposób daje mi najwięcej frajdy.
+
 Nie boję się wyzwań, ani tego że czegoś jeszcze nie wiem #sym.dash.em wręcz przeciwnie, to zwykle najlepszy powód, żeby się tym zająć.
 Nie uciekam od trudnych problemów.
 Wolę spędzić dodatkową godzinę na dobrym zrozumieniu problemu niż wracać do niego za trzy miesiące przy problemie na produkcji.
 
-Jeśli szukają Państwo kogoś, kto lubi programować, traktuje jakość kodu poważnie i nie zatrzymuje się na #emph[good enough], chętnie porozmawiam.
+Jeśli szukają Państwo kogoś, kto lubi programować, traktuje jakość kodu poważnie i nie zatrzymuje się na #emph[good enough], chętnie porozmawiam i pokażę na przykładach z pracy i własnych projektów, jak to wygląda w praktyce.
 
 #align(right)[
   Z poważaniem \
