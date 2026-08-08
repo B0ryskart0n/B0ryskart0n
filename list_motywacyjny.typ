@@ -65,9 +65,9 @@ Uczę się szybko i chętnie, bo to po prostu lubię #sym.dash.em nie dlatego, �
 Po godzinach rozwijam własne projekty (grę roguelike, wielowątkowy serwer http, i inne) jak i kontrybuuję do projektów otwartoźródłowych.
 Zgłębiane programowania w takim sposób daje mi najwięcej frajdy.
 
-Nie boję się wyzwań, ani tego że czegoś jeszcze nie wiem #sym.dash.em wręcz przeciwnie, to zwykle najlepszy powód, żeby się tym zająć.
+Nie boję się wyzwań, ani tego, że czegoś jeszcze nie wiem #sym.dash.em wręcz przeciwnie, to zwykle najlepszy powód, żeby się tym zająć.
 Nie uciekam od trudnych problemów.
-Wolę spędzić dodatkową godzinę na dobrym zrozumieniu problemu niż wracać do niego za trzy miesiące przy problemie na produkcji.
+Wolę spędzić dodatkową godzinę na dobrym zrozumieniu problemu, niż wracać do niego za trzy miesiące przy problemie na produkcji.
 
 Jeśli szukają Państwo kogoś, kto lubi programować, traktuje jakość kodu poważnie i nie zatrzymuje się na #emph[good enough], chętnie porozmawiam i pokażę na przykładach z pracy i własnych projektów, jak to wygląda w praktyce.
 
