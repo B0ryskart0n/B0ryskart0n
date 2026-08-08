@@ -137,7 +137,7 @@
   align(center)[
     #{
       let items = (
-        contact-item(phone),
+        contact-item(phone, link-type: "tel:"),
         contact-item(email, link-type: "mailto:"),
         contact-item(github, link-type: "https://"),
         contact-item(linkedin, link-type: "https://"),
