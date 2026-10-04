@@ -1,4 +1,4 @@
-all: compile-resume compile-cv compile-list
+all: compile-resume compile-cv compile-list compile-letter
 
 compile-resume:
 	typst compile resume.typ Borys_Kopeć_resume.pdf
@@ -8,3 +8,6 @@ compile-cv:
 
 compile-list:
 	typst compile list_motywacyjny.typ Borys_Kopeć_list_motywacyjny.pdf
+
+compile-letter:
+	typst compile cover_letter.typ Borys_Kopeć_cover_letter.pdf
